@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Environmental Issues AR</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+      
+      <a-marker type="pattern" url="marker_shinrin.patt">
+        <a-image src="shinrin.png" position="0 1 0" rotation="-90 0 0" width="2" height="1.5" transparent="true"></a-image>
+      </a-marker>
+
+      <a-marker type="pattern" url="marker_ondanka.patt">
+        <a-image src="ondanka.png" position="0 1 0" rotation="-90 0 0" width="2" height="1.5" transparent="true"></a-image>
+      </a-marker>
+
+      <a-marker type="pattern" url="marker_puragomi.patt">
+        <a-image src="puragomi.png" position="0 1 0" rotation="-90 0 0" width="2" height="1.5" transparent="true"></a-image>
+      </a-marker>
+
+      <a-marker type="pattern" url="marker_zetsumetsu.patt">
+        <a-image src="zetsumetsu.png" position="0 1 0" rotation="-90 0 0" width="2" height="1.5" transparent="true"></a-image>
+      </a-marker>
+
+      <a-marker type="pattern" url="marker_taikiosen.patt">
+        <a-image src="taikiosen.png" position="0 1 0" rotation="-90 0 0" width="2" height="1.5" transparent="true"></a-image>
+      </a-marker>
+
+      <a-marker type="pattern" url="marker_suishituosen.patt">
+        <a-image src="suishituosen.png" position="0 1 0" rotation="-90 0 0" width="2" height="1.5" transparent="true"></a-image>
+      </a-marker>
+
+      <a-marker type="pattern" url="marker_eikyutoudo.patt">
+        <a-image src="eikyutoudo.png" position="0 1 0" rotation="-90 0 0" width="2" height="1.5" transparent="true"></a-image>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
